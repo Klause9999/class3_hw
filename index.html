@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Class 3 HW</title>
+	<style>
+		div {
+			display:inline-block;
+		}
+	</style>
+	<style>
+		.ds {
+			border:2px black;
+			padding: 20px;
+			margin: 20px;
+		}
+	</style>
+	<style>
+th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+</style>
+</head>
+<body style="background-color: cyan;">
+
+	<!--Headings-->
+
+	<center>
+	<search>
+		<form>
+			<input type="text" name="search" placeholder="Search Sample">
+		</form>
+	</search>
+	</center>
+	<center>
+	<h2 style="text-align:center;">Here is a sample form</h2>
+    	<form style="background-color:limegreen; width: 500px; text-align:center; border-radius:20px;">
+    	<fieldset style="border:20px">
+    		<legend style="text-align:center; background-color:orangered; border-radius:100px">Sample Form</legend>
+    		<label for="fname">Name:</label>
+    		<input type="text" name="fname" required><br><br>
+    		<label for="mname">Mother's Name:</label>
+    		<input type="text" name="mname" required><br><br>
+    		<label for="faname">Father's Name:</label>
+    		<input type="text" name="faname" required><br><br>
+    		<label for="members">Number of Family Members</label>
+    		<select required>
+    			<option value="0">Choose</option>
+    			<optgroup label="Small Family">
+    				<option value="2">2 Members</option>
+    				<option value="3">3 Members</option>
+    			</optgroup>
+    			<optgroup label="Big Family">
+    				<option value="4">4 Members</option>
+    				<option value="4+">4 or More Members</option>
+    			</optgroup>
+    		</select>
+    		<br><br>
+    		<label for="phone">Phone Number:</label>
+    		<input type="tel" name="phone" placeholder="+8801XXX-XXXXXX" required><br><br>
+    		<label for="birthday">Birthday:</label>
+    		<input type="date" name="birthday" required><br><br>
+    		<label for="gender">Gender:</label>
+    		<input type="radio" name="gender">Male
+    		<input type="radio" name="gender">Female<br><br>
+    		<label for="money">Hourly Income ($):</label>
+    		<input type="range" name="age" min="0" max="200" value="20"  oninput="rangeValue.innerText=this.value"><p id="rangeValue">20</p><br><br>
+    		<label for="image">Submit Your Photo:</label>
+    		<input type="file" name="image"><br><br>
+    		<label for="email">Email:</label>
+    		<input type="email" name="email" placeholder="example@mail.com" required><br><br>
+    		<label for="password">Password:</label>
+    		<input type="password" name="password"><br><br>
+    		<input type="checkbox" name="remember">
+    		<label for="remember">Remember Me</label><br><br>
+    		<input type="submit" name="submit" style="background-color:hotpink; border-radius:20px;">
+    	</fieldset>
+    </form>
+    </center>
+  <br>
+  <hr>
+  <h2 style="text-align:center;">Iframe Sample</h2>
+    <center> <iframe style="border-radius:0px;" src="https://www.wikipedia.org/" title="Wikipedia" width="1000" height="500"></iframe> </center>
+    <br><br><hr><br><br>
+    <table style="width:100%;">
+	<tr style="background-color:orangered;">
+		<th style="width:20%;">Groups</th>
+		<th style="width:50%;">Date</th>
+		<th style="width:30%;">Note</th>
+	</tr>
+	<tr style="background-color:limegreen;">
+		<td style="text-align: center;">Axis</td>
+		<td style="text-align: center;">September 2, 1945</td>
+		<td style="text-align: center;">Lost WWII</td>
+	</tr>
+	<tr style="background-color:limegreen;">
+		<td style="text-align: center;">Allies</td>
+		<td style="text-align: center;">6th and 9th August, 1945</td>
+		<td style="text-align: center;">Nuclear Bombing in Japan</td>
+	</tr>
+    </table>
+    <div class="ds" style="background-color:white; border-radius: 0px;">
+    	<h3 style="text-align:center;">This is a div sample</h3>
+    	<h4 style="text-align:center;">This is a div sample</h4>
+    	<h5 style="text-align:center;">This is a div sample</h5>
+    </div>
+    <div class="ds" style="background-color:hotpink; border-radius: 0px;">
+    	<h3 style="text-align:center;">This is a div sample</h3>
+    	<h4 style="text-align:center;">This is a div sample</h4>
+    	<h5 style="text-align:center;">This is a div sample</h5>
+    </div>
+    <div class="ds" style="background-color:darkgreen; border-radius: 0px;">
+    	<h3 style="text-align:center;">This is a div sample</h3>
+    	<h4 style="text-align:center;">This is a div sample</h4>
+    	<h5 style="text-align:center;">This is a div sample</h5>
+    </div>
+    <br>
+
+    <!--Meter Sample-->
+
+    <p><label for="high">High Temperature Indicator:</label><meter id="high" min="0" max="100" low="30" high="80" value="90"></meter></p>
+    <p><label for="medium">Medium Temperature Indicator:</label><meter id="medium" min="0" max="100" low="30" high="80" value="50"></meter></p>
+    <p><label for="low">Low Temperature Indicator:</label><meter id="low" min="0" max="100" low="30" high="80" value="20"></meter></p>
+    <h2>here is a summary sample</h2>
+    <details>
+    	<summary>Sample Summary </summary>
+    	<p>Here is a sample summary</p>
+</details>
+    <p>Here is an audio from 1969 when human landed on the moon</p>
+    <audio controls>
+    	<source src="aud/moon landing.mp3" type="audio/mpeg">
+    </audio>
+<hr>
+
+	<!--Link test-->
+
+	<a href="https://www.google.com/">Google Redirect on same tab</a>
+	<br>
+	<a href="https://www.google.com/" target="_blank">Google redirect on another tab</a>
+	<br>
+	<p>Here is a sample that how to use a picture as a link</p>
+	<a href="https://www.shikhbeshobai.com/" target="_blank"> <img width="100" src="img/shikhbeshobai.jpg" alt="shikhbeshobai"> </a>
+	<br>
+	<a href="mailto:abirhossain000001@gmail.com">Email us</a>
+	<br>
+	<a href="tel:+8801540149609">Call us</a>
+	<br>
+	<a href="javascript:alert('This is a sample warning!');">Sample Java Execute</a>
+	<br>
+	<a href="https://www.google.com/" target="_blank"> <button style="background-color: lightsalmon; font-size:15px; border-radius:20px;" >Google</button> </a>
+	<br>
+	<br>
+<hr>
+
+	<!-- This test is for Quotation-->
+
+	<p>Here is a quote from Adolf Hitler :</p>
+	<blockquote cite="https://www.goodreads.com/author/quotes/30691.Adolf_Hitler">Anyone can deal with victory. Only the mighty can bear defeat</blockquote>
+	<p>In 1945 U.S. stated that <q>The Nazis Killed more than 6 Million Jews from 1939 to 1945</q> </p>
+	<p> <abbr title="Union of Soviet Socialist Republics">USSR</abbr> was the biggest country ever existed</p>
+    <dl>
+    	<dt>Minhaz Faisal</dt>
+    	<dd>- Professional Web Developer</dd>
+    	<dt>Abir Hossain</dt>
+    	<dd>- Started to learn Web Development</dd>
+    </dl>
+    <ul>
+    	<li>Mango</li>
+    	<li>Apple</li>
+    	<li>Banana</li>
+    </ul>
+    <ol>
+    	<li>Vegetables</li>
+    	<li>Beef</li>
+    	<li>Meat</li>
+    </ol>
+    <!--Redict to other websit in the same file-->
+    <a href="about.html" target="_blank">Redirect to About Page</a>
+    <br>
+    <br>
+
+	<!--Misc Test-->
+
+	<p style="color:red;">Color test</p>
+	<b>Bold test</b>
+	<br>
+	<i>Italic test</i>
+	<br>
+	<p style="font-size:30px;">Size Test</p>
+	<br>
+	<strong>Strong Test</strong>
+	<br>
+	<em>Emphasized Test</em>
+	<br>
+	<mark>Marked Test</mark>
+	<br>
+	<small>Small Test</small>
+	<br>
+	<del>Deleted Test</del>
+	<br>
+	<ins>Inserted Test</ins>
+	<br>
+	<p>This is a test for <sub>Sub</sub> and <sup>Sup</sup> Test </p>
+	<br>
+	<bdo dir="rtl">This is a sample for opposite text</bdo>
+	<br>
+	<h1 style="border:3px solid DodgerBlue;">Border sample</h1>
+</body>
+</body>
+</html>
